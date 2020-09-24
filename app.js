@@ -46,7 +46,7 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
         document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
 
         // Check if any player is winner
-        if (scores[activePlayer] >= 20) {
+        if (scores[activePlayer] >= 100) {
             document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
             diceDOM.style.display = 'none';
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
